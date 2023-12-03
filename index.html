@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Pro epik gaming</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <img id="img" src="./assets/china.png"></img>
+        <img id="china" src='./assets/Xi_Jinping_(2023-04-06).jpg' alt='Image failed to load'>
+        <img id="heckerandroid" src='./assets/heckerchinise-1.jpg' alt='Image failed to load'>
+        <h1> <a href ='https://nsa.gov'>This is a chinise spyware webserver!</a></h1>
+        <p>It is very secure and safe to use!</p>
+        <img id="kim" src='./assets/kim.jpg' alt='Image failed to load'>
+    </div>
+    <script>
+    const images = ['./assets/china.png', './assets/northkorea.png']
+    const image = document.getElementById("img")
+    var x = 0
+    function nextImage() {
+        x += 1
+        if (x >= images.length) x = 0;
+            image.setAttribute("src", images[x])
+    }
+    nextImage()
+    setInterval(nextImage, 1000)
+    //thanks to whatware on discord for the help
+    </script>
+</body>
